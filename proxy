@@ -12,7 +12,7 @@ if [[ "$(id -u)" != "0" ]];then
 	echo "Requer root"
 else
 	if [[ "$1" == "-d" ]];then
-		rm -rf /etc/apt/apt.conf $HOME/.m2/settings.xml
+		rm -rf /etc/apt/apt.conf .m2/settings.xml
 	else
 		proxy_apt $*
 		proxy_mvn $* 
